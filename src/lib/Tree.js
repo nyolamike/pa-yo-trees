@@ -1,10 +1,8 @@
-class Tree {
+import Plant from "./Plant"
+class Tree extends Plant{
     constructor(name,latitude,longitude,countryCode,locationName){
-        this.name = name
-        this.latitude = latitude
-        this.longitude = longitude
-        this.countryCode = countryCode
-        this.locationName = locationName
+        super(name,latitude,longitude,countryCode,locationName);
+        this.kind = "tree";
     }
 }
 

@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Tree from './lib/Tree';
+import Plant from './lib/Plant'
+import Tree from './lib/Tree'
 
 function App() {
 
   //creating an objbect from a class
-  var mikesTrees = new Tree("mTree1",0.0011334,45.7688,"UG","Nalumunye, Jomayi Estates, Wakiso");
-  console.log("mikesTrees: ", mikesTrees);
+  var mikesPlant = new Plant("mPlnt1",0.0011334,45.7688,"UG","Nalumunye, Jomayi Estates, Wakiso")
+  mikesPlant.log()
+  //a tree
+  var mikesTree = new Tree("mPlnt2",0.1011334,47.7688,"UG","Nalumunye, Jomayi Estates, Wakiso")
+  mikesTree.log()
   return (
     <div className="App">
       <h1> <img src={logo}  /> Pa Yo Trees</h1>
